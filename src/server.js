@@ -135,3 +135,10 @@ app.get('/api/admin/orders/:id/invoice', async (req,res)=>{
 })
 
 app.listen(PORT, ()=>console.log('Backend on http://localhost:'+PORT))
+app.get("/", (req, res) => {
+  res.send("Pegi API është online ✅");
+});
+
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
