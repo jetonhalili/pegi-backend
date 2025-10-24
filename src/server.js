@@ -142,3 +142,10 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
   res.json({ status: "ok" });
 });
+app.get("/", (req, res) => {
+  res.send("Pegi API është online ✅");
+});
+
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
